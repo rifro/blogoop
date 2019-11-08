@@ -89,7 +89,5 @@ class Photo extends Db_object
         }else{
             return false;
         }
-
     }
-
 }
