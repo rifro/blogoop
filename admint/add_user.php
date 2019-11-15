@@ -13,18 +13,19 @@ if(isset($_POST['submit'])){
         $user->first_name= $_POST['first_name'];
         $user->last_name= $_POST['last_name'];
         $user->password= $_POST['password'];
+        $user->user_image = // RR!!
         $user->set_file($_FILES['user_image']);
         $user->save_user_and_image();
-        redirect('users.php');
 
     }
+    //redirect("users.php"); RR!! debug
 }
 
 /*if(empty($_GET['id'])){
 
     redirect("users.php");
 }else{
-   /* $user = user::find_by_id($_GET['id']);
+   $user = user::find_by_id($_GET['id']);
 
     if(isset($_POST['update'])){
         if($user){
@@ -67,9 +68,10 @@ if(isset($_POST['submit'])){
                             <label for="password">Password</label>
                             <input type="password" name="password" class="form-control">
                         </div>
-			<div class="form-group">
-                            <input type="file" name="user_image" class="form-control">
-                        </div>
+                <div class="form-group">
+                    <label for="file">User image</label>
+                    <input type="file" name="user_image" class="form-control">
+                </div>
                         <div class="form-group">
 
                             <input class="btn btn-primary" type="submit" value="Create user" name="submit"

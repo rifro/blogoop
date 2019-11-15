@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     $username = trim($_POST['username']);
     $password = trim($_POST['password']);
 
-    /*Methode check de db of de user bestaat*/
+    /*Methode check de database of de user bestaat*/
     $user_found = User::verify_user($username, $password);
 
     if($user_found){
@@ -45,8 +45,9 @@ if(isset($_POST['submit'])){
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+  		    <h5 class="bg-danger"><?php echo $the_message; ?></h5>
                   </div>
-                    <h5 class="bg-danger"><?php echo $the_message; ?></h5>
+                  
                   <form class="user" action="" method="POST">
                     <div class="form-group">
                       <input type="text" class="form-control form-control-user" name="username" id="username"

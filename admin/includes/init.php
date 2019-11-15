@@ -1,5 +1,6 @@
 <?php
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
+/*define('SITE_ROOT', DS . 'wamp64' . DS . 'www' . DS . 'blogoop');*/
 define('SITE_ROOT', 'C:\\xampp' . DS . 'htdocs' . DS . 'blogoop');
 defined('INCLUDES_PATH') ? null : define('INCLUDES_PATH', SITE_ROOT.DS.'admin'.DS.'includes');
 defined('IMAGES_PATH') ? null : define('IMAGES_PATH', SITE_ROOT.DS.'admin'.DS.'img');

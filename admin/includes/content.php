@@ -7,12 +7,12 @@
             <hr>
             <p>
                 <?php
-                  /*$user = new User();
-                  $user->username = 'Emanuel';
+                /*  CREATE
+                  $user = new User();
+                  $user->username = 'Richard';
                   $user->password = '1234';
-                  $user->first_name = 'Emanuel';
-                  $user->last_name = 'Degruyter';
-
+                  $user->first_name = 'Richard';
+                  $user->last_name = 'Rombouts';
                   $user->create();*/
 
                 /*UPDATE
@@ -25,10 +25,10 @@
                  $user = User::find_user_by_id(7);
                  $user->delete();*/
 
-              /* $user = User::find_user_by_id(200);
-                $user->username = "TEST";
-                $user->save();
-	      */
+                /*SAVE
+                 $user = User::find_user_by_id(200);
+                 $user->username = "TEST";
+                 $user->save();*/
 	      
              /* $users = User::find_all();
               foreach($users as $user){

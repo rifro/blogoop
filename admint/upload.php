@@ -46,8 +46,7 @@ if(isset($_POST['submit'])) {
                 </div>
                 <div class="form-group">
                     <label for="alternate_text">Alternate Text</label>
-                    <input type="text" name="alternate_text" class="form-control"
-                          >
+                    <input type="text" name="alternate_text" class="form-control">
                 </div>
                     <input type="submit" name="submit" value="Upload" class="btn btn-primary">
                 </form>

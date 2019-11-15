@@ -9,6 +9,7 @@ class Comment extends Db_object
     public $photo_id;
     public $author;
     public $body;
+    public $last_name; //RR!!
 
     public static function create_comment($photo_id, $author="Test", $body=""){
         if(!empty($photo_id) && !empty($author) && !empty($body)){
@@ -27,6 +28,7 @@ class Comment extends Db_object
         $sql = "SELECT * FROM " . self::$db_table;
         $sql .= " WHERE photo_id = " . $database->escape_string ($photo_id);
         $sql .= " ORDER BY photo_id ASC";
+	var_dump($sql); //RR!!
         return self::find_this_query ($sql);
     }
 }

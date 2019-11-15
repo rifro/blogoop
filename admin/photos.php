@@ -29,8 +29,8 @@ include("includes/content-top.php");
                     <th>Alternate Text</th>
                     <th>Size</th>
                     <th>Comments</th>
-                    <th>Wijzig?</th>
-                    <th>Delete?</th>
+		    <th>Delete?</th>
+                    <th>Edit?</th>
                     <th>View?</th>
                 </tr>
                 </thead>

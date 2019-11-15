@@ -7,7 +7,8 @@ if (!$session->is_signed_in()) {
 if(empty($_GET['id'])){
 
     redirect("photos.php");
-}else{
+}
+
     $photo = Photo::find_by_id($_GET['id']);
 
     if(isset($_POST['update'])){
@@ -21,7 +22,7 @@ if(empty($_GET['id'])){
             redirect("photos.php");
         }
     }
-}
+
 include("includes/sidebar.php");
 include("includes/content-top.php");
 
@@ -29,7 +30,7 @@ include("includes/content-top.php");
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h1>Welkom op de edit photo pagina</h1>
+            <h1>Welkom op de edit foto pagina</h1>
             <form action="edit_photo.php?id=<?php echo $photo->id; ?>" method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-8">
@@ -40,7 +41,8 @@ include("includes/content-top.php");
                                    value="<?php echo $photo->title; ?>">
                         </div>
                         <div class="form-group">
-                            <a href="#" class="thumbnail"><img src="<?php echo $photo->picture_path(); ?>" alt=""></a>
+                                <a class="thumbnail" href="#"> <img src="<?php echo $photo->picture_path(); ?>" height="150" width="300" alt="">
+                                </a>
                         </div>
                         <div class="form-group">
                             <label for="caption">Caption</label>
@@ -80,11 +82,13 @@ include("includes/content-top.php");
                                     </p>
                                     <p class="text">
                                         <label for="type">File Type:</label>
-                                        <input readonly type="text" name="type" class="form-control" value="<?php echo $photo->type; ?>">
+                                        <input readonly type="text" name="type" class="form-control" 
+					value="<?php echo $photo->type; ?>">
                                     </p>
                                     <p class="text">
                                         <label for="size">File Size:</label>
-                                        <input readonly type="text" name="size" class="form-control" value="<?php echo $photo->size; ?>">
+                                        <input readonly type="text" name="size" class="form-control" 
+					value="<?php echo $photo->size; ?>">
                                     </p>
                                 </div>
                                 <div class="info-box-footer">
@@ -102,6 +106,5 @@ include("includes/content-top.php");
             </div>
         </div>
     </div>
-<?php
-include("includes/footer.php");
-?>
+<?php include("includes/footer.php"); ?>
+

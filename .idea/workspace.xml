@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70e7a081-edfd-46b9-8662-278af4a931a7" name="Default Changelist" comment="" />
+    <list default="true" id="70e7a081-edfd-46b9-8662-278af4a931a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.ini" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/blogoop-merged" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="settings.editor.splitter.proportion" value="0.41883767" />
   </component>
@@ -81,6 +83,9 @@
       <workItem from="1572249743068" duration="1867000" />
       <workItem from="1572251684233" duration="6605000" />
       <workItem from="1573201017276" duration="9299000" />
+      <workItem from="1573814063019" duration="171000" />
+      <workItem from="1573814313759" duration="68000" />
+      <workItem from="1573814412711" duration="594000" />
     </task>
     <servers />
   </component>
@@ -92,7 +97,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -5,7 +5,7 @@ class Database
 {
     /* variabelen van het object(class)*/
     public $connection;
-    /* default constructor. Alle code tussen curly brackets wordt uitgevoerd bij aanroepen van het object (class)*/
+    /* default constructor. */
     function __construct(){
         $this->open_db_connection();
     }
@@ -18,9 +18,9 @@ class Database
            die("Database connection mislukt" .mysqli_error());
        }
     }
-    /*queries**/
-    public function confirm_query($result){
 
+    /*queries*/
+    public function confirm_query($result){
         if(!$result){
             die("query kon niet worden uitgevoerd" . $this->connection->error);
         }

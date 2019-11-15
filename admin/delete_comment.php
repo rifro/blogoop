@@ -18,5 +18,6 @@ redirect ('comments.php');
 include("includes/sidebar.php");
 include("includes/content-top.php");
 ?>
+<?php include ("includes/content-top.php.php"); ?>
 <h1>Welkom delete comment pagina</h1>
 <?php include ("includes/footer.php.php"); ?>

@@ -3,10 +3,10 @@ include("includes/header.php");
 if(!$session->is_signed_in ()){
     redirect ('login.php');
 }
-
+if (empty($_GET['id'])){
+    redirect('photos.php');
+}
 $comments = Comment::find_the_comments($_GET['id']);
-/* $comments = Comment::find_all (); !!!*/
-/*include ("includes/sidebar.php");*/
 include ("includes/content-top.php");?>
 
     <div class="container-fluid">

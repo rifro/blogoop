@@ -3,8 +3,6 @@
 
 class Photo extends Db_object
 {
-
-    /**VARIABELEN**/
     protected static $db_table = "photos";
     protected static $db_table_fields = array('title', 'caption', 'description', 'filename', 'alternate_text', 'type', 'size');
 
@@ -31,12 +29,10 @@ class Photo extends Db_object
         UPLOAD_ERR_EXTENSION => "A php extension stopped your upload"
     );
 
-    /**METHODES**/
-    //$_FILE['upload_file']
     public function set_file($file)
     {
         if (empty($file) || !$file || !is_array($file)) {
-            $this->errors[]= 'No file uploaded!';
+            $this->errors[] = "No file uploaded";
             return false;
         } elseif ($file['error'] != 0) {
             $this->errors[] = $this->upload_errors_array[$file['error']];
@@ -48,44 +44,47 @@ class Photo extends Db_object
             $this->size = $file['size'];
         }
     }
-    public function save(){
-        if($this->id){
+
+    public function save()
+    {
+        if ($this->id) {
             $this->update();
-        }else{
-            if(!empty($this->errors)){
+        } else {
+            if (!empty($this->errors)) {
                 return false;
             }
-            if(empty($this->filename) || empty($this->tmp_path)){
+            if (empty($this->filename) || empty($this->tmp_path)) {
                 $this->errors[] = "File not available";
                 return false;
             }
             $target_path = SITE_ROOT . DS . "admin" . DS . $this->upload_directory . DS . $this->filename;
-            if(file_exists($target_path)){
+            if (file_exists($target_path)) {
                 $this->errors[] = "File {$this->filename} exists!";
                 return false;
             }
-            if(move_uploaded_file($this->tmp_path, $target_path)){
-                if($this->create()){
+            if (move_uploaded_file($this->tmp_path, $target_path)) {
+                if ($this->create()) {
                     unset($this->tmp_path);
                     return true;
                 }
-            }
-            else{
+            } else {
                 $this->errors[] = "this folder has no write rights!";
                 return false;
             }
         }
     }
 
-    public function picture_path(){
-        return $this->upload_directory.DS.$this->filename;
+    public function picture_path()
+    {
+        return $this->upload_directory . DS . $this->filename;
     }
 
-    public function delete(){
-        if($this->delete()){
-            $target_path = SITE_ROOT.DS.'admin'.DS.$this->picture_path();
+    public function delete()
+    {
+        if ($this->delete()) {
+            $target_path = SITE_ROOT . DS . 'admin' . DS . $this->picture_path();
             return unlink($target_path) ? true : false;
-        } else{
+        } else {
             return false;
         }
     }
