@@ -2,7 +2,6 @@
 include("includes/header.php");
 if (!$session->is_signed_in()) {
     redirect("login.php");
-
 }
 
 
@@ -22,10 +21,10 @@ include("includes/sidebar.php");
 include("includes/content-top.php");
 
 ?>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <a class="btn btn-success" href="users.php">All Users</a> /* RR!!! */
             <h1>Welkom op de user toevoegen pagina</h1>
 
             <form action="add_user.php" method="post" enctype="multipart/form-data">

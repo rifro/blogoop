@@ -3,12 +3,13 @@ include("includes/header.php");
 if (!$session->is_signed_in()) {
     redirect("login.php");
 }
+
 if (empty($_GET['id'])) {
     redirect("users.php");
 }
 
 $user = User::find_by_id($_GET['id']);
-if (isset($_POST['update_user'])) {
+if (isset($_POST['update'])) {
     if ($user) {
         $user->username   = $_POST['username'];
         $user->first_name = $_POST['first_name'];
@@ -26,6 +27,7 @@ if (isset($_POST['update_user'])) {
 }
 include("includes/sidebar.php");
 include("includes/content-top.php");
+
 ?>
 
 <div class="container-fluid">
@@ -64,7 +66,7 @@ include("includes/content-top.php");
                             <label for="user_image">User Image</label>
                             <input type="file" name="user_image" class="form-control">
                         </div>
-                        <input type="submit" name="submit" value="Update User" class="btn btn-primary">
+                        <input type="submit" name="edit" value="Edit User" class="btn btn-primary">
                         <a class="btn btn-danger" href="delete_user.php?id=<?php echo $user->id; ?>">delete user</a>
                     </div>
                 </div>

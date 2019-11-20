@@ -34,10 +34,10 @@ include("includes/content-top.php");
                         <td><?php echo $user->last_name; ?></td>
 			<td><a class="btn btn-warning rounded-0" 
 				href="edit_user.php?id=<?php echo $user->id; ?>" >
-				<i class="far fa-edit"></i></a></td>
+				<i class="fas fa-edit"></i></a></td>
                         <td><a class="btn btn-danger rounded-0"
                                href="delete_user.php?id=<?php echo $user->id; ?>">
-                                <i class="far fa-trash-alt"></i>
+                                <i class="fas fa-trash-alt"></i>
                               </a></td>
 
                     </tr>

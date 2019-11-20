@@ -40,8 +40,8 @@ include("includes/content-top.php");
                     <td><?php echo $photo->filename; ?></td>
                     <td><?php echo $photo->alternate_text; ?></td>
                     <td><?php echo $photo->size; ?></td>
-                    <td><a class="btn btn-danger rounded-0" href="edit_photo.php?id=<?php echo $photo->id; ?>" ><i class="far fa-edit"></i></a></td>
-                    <td><a class="btn btn-danger rounded-0" href="delete_photo.php?id=<?php echo $photo->id; ?>" ><i class="far fa-trash-alt"></i></a></td>
+                    <td><a class="btn btn-danger rounded-0" href="edit_photo.php?id=<?php echo $photo->id; ?>" ><i class="fas fa-edit"></i></a></td>
+                    <td><a class="btn btn-danger rounded-0" href="delete_photo.php?id=<?php echo $photo->id; ?>" ><i class="fas fa-trash-alt"></i></a></td>
                 </tr>
                 <?php endforeach;  ?>
                 </tbody>

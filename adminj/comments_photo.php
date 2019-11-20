@@ -33,7 +33,7 @@ $comments = Comment::find_the_comments($_GET['id']);
                             <td><?php echo $comment->body; ?></td>
 
                             <td><a href="delete_comment_photo.php?id=<?php echo $comment->id; ?>" class="btn btn-danger rounded-0">
-                                    <i class="far fa-trash-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
                                 </a></td>
                         </tr>
                     <?php endforeach; ?>

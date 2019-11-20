@@ -47,9 +47,9 @@ include ("includes/content-top.php");?>
                                     ?>
                                 </a>
                             </td>
-                            <td><a href="edit_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger rounded-0"><i class="far fa-edit"></i></a></td>
+                            <td><a href="edit_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
                             <td><a href="delete_photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger rounded-0">
-                                    <i class="far fa-trash-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
                                 </a></td>
                             <td><a href="../photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger rounded-0"><i class="fas fa-eye"></i></a></td>
                         </tr>

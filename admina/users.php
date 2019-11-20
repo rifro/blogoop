@@ -36,9 +36,9 @@ include ("includes/content-top.php");?>
                             <td><?php echo $user->first_name; ?></td>
                             <td><?php echo $user->last_name; ?></td>
 
-                            <td><a href="edit_user.php?id=<?php echo $user->id; ?>" class="btn btn-danger rounded-0"><i class="far fa-edit"></i></a></td>
+                            <td><a href="edit_user.php?id=<?php echo $user->id; ?>" class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
                             <td><a href="delete_user.php?id=<?php echo $user->id; ?>" class="btn btn-danger rounded-0">
-                                    <i class="far fa-trash-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
                                 </a></td>
                         </tr>
                     <?php endforeach; ?>

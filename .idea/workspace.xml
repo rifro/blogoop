@@ -3,6 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="70e7a081-edfd-46b9-8662-278af4a931a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admina/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admina/comments_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/comments_photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admina/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admina/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminj/comments_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminj/comments_photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminj/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminj/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminj/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminj/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admint/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admint/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admint/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admint/users.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +102,7 @@
       <workItem from="1573814063019" duration="171000" />
       <workItem from="1573814313759" duration="68000" />
       <workItem from="1573814412711" duration="594000" />
+      <workItem from="1574252189912" duration="9615000" />
     </task>
     <servers />
   </component>
@@ -110,22 +127,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/add_user.php</url>
-          <line>16</line>
+          <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/add_user.php</url>
-          <line>15</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/includes/Db_object.php</url>
-          <line>124</line>
+          <line>128</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/includes/Db_object.php</url>
-          <line>133</line>
+          <line>138</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
