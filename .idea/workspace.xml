@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e7a081-edfd-46b9-8662-278af4a931a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_photo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_photo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/init.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/photos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admina/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admina/comments_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/comments_photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admina/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/photos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admina/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admina/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminj/comments_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminj/comments_photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminj/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminj/photos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminj/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminj/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admint/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admint/photos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admint/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admint/users.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,12 +63,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.photo.php">
     <configuration name="add_user.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/admin/add_user.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="photo.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/photo.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.photo.php" />
         <item itemvalue="PHP Script.add_user.php" />
       </list>
     </recent_temporary>
@@ -102,7 +102,8 @@
       <workItem from="1573814063019" duration="171000" />
       <workItem from="1573814313759" duration="68000" />
       <workItem from="1573814412711" duration="594000" />
-      <workItem from="1574252189912" duration="9615000" />
+      <workItem from="1574252189912" duration="9902000" />
+      <workItem from="1574410061149" duration="21234000" />
     </task>
     <servers />
   </component>
@@ -126,19 +127,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/add_user.php</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/includes/Db_object.php</url>
           <line>128</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/../../phpMyAdmin/index.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/photos.php</url>
+          <line>51</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/admin/photos.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/admin/includes/Db_object.php</url>
-          <line>138</line>
-          <option name="timeStamp" value="21" />
+          <line>79</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/photo.php</url>
+          <line>85</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,7 +8,6 @@ defined('IMAGES_PATH') ? null : define('IMAGES_PATH', SITE_ROOT.DS.'admin'.DS.'i
 /*php pagina's*/
 require_once("functions.php");
 require_once("config.php");
-/*Objecten*/
 require_once("Database.php");
 require_once("Db_object.php");
 require_once("User.php");

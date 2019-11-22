@@ -38,7 +38,6 @@ class User extends Db_object
 
     public function set_file($file)
     {
-        $timestamp = date('Y-m-d H-i-s_');
         if (empty($file) || !$file || !is_array($file)) {
             $this->errors[] = "No file uploaded!";
             return false;
@@ -46,6 +45,7 @@ class User extends Db_object
             $this->errors[] = $this->upload_errors_array[$file['error']];
             return false;
         } else {
+            $timestamp = date('Y-m-d H-i-s_');
             $this->user_image = $timestamp . basename($file['name']);
             $this->tmp_path = $file['tmp_name'];
             $this->type = $file['type'];

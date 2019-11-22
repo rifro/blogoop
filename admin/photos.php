@@ -31,7 +31,6 @@ include("includes/content-top.php");
                         <th>Comments</th>
                         <th>Edit?</th>
                         <th>Delete?</th>
-
                         <th>View?</th>
                     </tr>
                     </thead>

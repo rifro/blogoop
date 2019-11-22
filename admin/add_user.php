@@ -4,8 +4,6 @@ if (!$session->is_signed_in()) {
     redirect("login.php");
 }
 
-
-
 if(isset($_POST['submit'])){
     $user = new User();
     $user->username= $_POST['username'];
@@ -17,9 +15,9 @@ if(isset($_POST['submit'])){
     $user->save_user_and_image();
     //redirect("users.php"); RR!! debug uit, normaal aan
 }
+
 include("includes/sidebar.php");
 include("includes/content-top.php");
-
 ?>
 
 <div class="container-fluid">

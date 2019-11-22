@@ -1,25 +1,26 @@
 <?php
 include("includes/header.php");
-if(!$session->is_signed_in ()){
-    redirect ('login.php');
+if (!$session->is_signed_in()) {
+    redirect('login.php');
 }
-if (empty($_GET['id'])){
+if (empty($_GET['id'])) {
     redirect('photos.php');
 }
 $comments = Comment::find_the_comments($_GET['id']);
-include ("includes/content-top.php");?>
+include("includes/content-top.php"); ?>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <h2>POSTED COMMENTS FOR THIS PHOTO</h2>
-                <td><a href="add_comment.php" class="btn btn-primary rounded-0"><i class="fas fa-comment-plus"></i>Add comment</a></td>
+                <td><a href="add_comment.php" class="btn btn-primary rounded-0"><i class="fas fa-comment-plus"></i>Add
+                        comment</a></td>
                 <table class="table table-header">
                     <thead>
                     <tr>
                         <th>Id</th>
                         <th>Author</th>
-                        <th>body</th>
+                        <th>Body</th>
                         <th>Delete?</th>
                     </tr>
                     </thead>
@@ -32,10 +33,11 @@ include ("includes/content-top.php");?>
                             <td><?php echo $comment->author; ?></td>
                             <td><?php echo $comment->body; ?></td>
 
-                            <td><a href="delete_comment.php?id=<?php echo $comment->id; ?>" class="btn btn-danger rounded-0">
+                            <td><a href="delete_comment.php?id=<?php echo $comment->id; ?>"
+                                   class="btn btn-danger rounded-0">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
-			    </td>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                     </tbody>

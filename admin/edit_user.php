@@ -27,7 +27,6 @@ if (isset($_POST['update'])) {
 }
 include("includes/sidebar.php");
 include("includes/content-top.php");
-
 ?>
 
 <div class="container-fluid">
