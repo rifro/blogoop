@@ -64,8 +64,11 @@ include("includes/content-top.php");
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                             </td>
-                            <td><a href="../photo.php?id=<?php echo $photo->id; ?>" class="btn btn-danger rounded-0"><i
-                                            class="fas fa-eye"></i></a></td>
+                            <td><a class="btn btn-danger rounded-0"
+                                   href="../photo.php?id=<?php echo $photo->id; ?>">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
 

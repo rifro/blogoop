@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e7a081-edfd-46b9-8662-278af4a931a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/comments_photo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/delete_comment_photo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/add_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/add_user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/photos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/users.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="localhost" id="3d5b7372-b398-4b89-b02b-c31cee0bd8dd" name="localhost" />
@@ -41,14 +37,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/blogoop-merged" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="settings.editor.splitter.proportion" value="0.41883767" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\blogoop\admin\includes" />
       <recent name="C:\xampp\htdocs\blogoop\admin" />
+      <recent name="C:\xampp\htdocs\blogoop\admin\includes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,6 +100,7 @@
       <workItem from="1573814412711" duration="594000" />
       <workItem from="1574252189912" duration="9902000" />
       <workItem from="1574410061149" duration="21234000" />
+      <workItem from="1574856681207" duration="10186000" />
     </task>
     <servers />
   </component>
@@ -124,39 +121,10 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/includes/Db_object.php</url>
-          <line>128</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/../../phpMyAdmin/index.php</url>
-          <line>7</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/photos.php</url>
-          <line>51</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/photos.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/admin/includes/Db_object.php</url>
-          <line>79</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/photo.php</url>
-          <line>85</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="delete_comment_photo.php">
+        <watch expression="redirect ('comments_photo.php?id={$comment-&gt;photo_id}')" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
