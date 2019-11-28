@@ -4,20 +4,18 @@ if (!$session->is_signed_in()) {
     redirect('login.php');
 }
 
-/*
-if (empty($_GET['id'])){
+if (empty($_GET['id'])) {
     redirect('photos.php');
 }
-*/
 
-$comments = Comment::find_all();
+$comments = Comment::find_the_comments($_GET['id']);
 include("includes/sidebar.php");
 include("includes/content-top.php");
 ?>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h2>All Comments</h2>
+                <h2>POSTED COMMENTS FOR THIS PHOTO</h2>
                 <td><a href="add_comment.php" class="btn btn-primary rounded-0"><i class="fas fa-comment-plus"></i>Add
                         comment</a></td>
                 <table class="table table-header">
@@ -36,7 +34,7 @@ include("includes/content-top.php");
                             <td><?php echo $comment->author; ?></td>
                             <td><?php echo $comment->body; ?></td>
 
-                            <td><a href="delete_comment.php?id=<?php echo $comment->id; ?>"
+                            <td><a href="delete_comment_photo.php?id=<?php echo $comment->id; ?>"
                                    class="btn btn-danger rounded-0">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>

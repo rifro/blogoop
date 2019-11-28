@@ -51,7 +51,6 @@ include("includes/content-top.php");
                             </td>
                         </tr>
                     <?php endforeach; ?>
-
                     </tbody>
                 </table>
             </div>
