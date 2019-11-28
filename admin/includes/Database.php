@@ -27,6 +27,7 @@ class Database
     }
 
     public function query($sql){
+        var_dump($sql);
         $result = $this->connection->query($sql);
         $this->confirm_query($result);
         return $result;
