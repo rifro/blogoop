@@ -1,63 +1,71 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <!-- Page Heading -->
     <div class="row">
         <div class="col-12">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <hr>
-            <p>
-                <?php
-                /*  CREATE
-                  $user = new User();
-                  $user->username = 'Richard';
-                  $user->password = '1234';
-                  $user->first_name = 'Richard';
-                  $user->last_name = 'Rombouts';
-                  $user->create();*/
+            <h1 class="page-header">
+                Dashboard
+            </h1>
 
-                /*UPDATE
-                  $user = User::find_user_by_id(1);
-                  $user->last_name = "VANHOUTTE";
-                  $user->password = 123456;
-                  $user->update();*/
 
-                /*DELETE
-                 $user = User::find_user_by_id(7);
-                 $user->delete();*/
+            <!-- Content Row -->
+            <div class="row">
 
-                /*SAVE
-                 $user = User::find_user_by_id(200);
-                 $user->username = "TEST";
-                 $user->save();*/
-	      
-             /* $users = User::find_all();
-              foreach($users as $user){
-                  echo $user->username . "<br>";
-              }
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card border-left-primary shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Users</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo User::count_all(); ?></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-              $photos = Photo::find_all();
-              foreach($photos as $photo){
-                  echo $photo->title . "<br>";
-              }
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card border-left-success shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Photos</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo Photo::count_all(); ?></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-              $photo = new Photo();
-              $photo->title = "Sam";
-              $photo->description = "Lorem ipsum hond";
-              $photo->size = 15;
+                <!-- Pending Requests Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-left-warning shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Comments</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo Comment::count_all(); ?></div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-              $photo->create();
-	     */
-	     
-             echo INCLUDES_PATH;
-             echo IMAGES_PATH;
-                ?>
 
-            </p>
         </div>
-    </div>
-
+    </div><!-- row -->
+</div> <!-- /.container-fluid -->
+<div class="row">
+    <div class="mx-auto" id="piechart" style="width:900px; height:500px;"></div>
 </div>
-<!-- /.container-fluid -->
-
-</div>
-<!-- End of Main Content -->
