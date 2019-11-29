@@ -66,6 +66,8 @@
         </div>
     </div><!-- row -->
 </div> <!-- /.container-fluid -->
+
+<!--Div that will hold the pie chart-->
 <div class="row">
     <div class="mx-auto" id="piechart" style="width:900px; height:500px;"></div>
 </div>

@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70e7a081-edfd-46b9-8662-278af4a931a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/comments_photo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/delete_comment_photo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/content.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/photos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +33,11 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1Re77DiVqnbQrXDGL8zQa89SUvm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
@@ -46,18 +49,6 @@
       <recent name="C:\xampp\htdocs\blogoop\admin" />
       <recent name="C:\xampp\htdocs\blogoop\admin\includes" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="PHP Script.photo.php">
     <configuration name="add_user.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/admin/add_user.php">
@@ -72,6 +63,18 @@
         <item itemvalue="PHP Script.add_user.php" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,6 +104,8 @@
       <workItem from="1574252189912" duration="9902000" />
       <workItem from="1574410061149" duration="21234000" />
       <workItem from="1574856681207" duration="10186000" />
+      <workItem from="1575018215421" duration="3664000" />
+      <workItem from="1575029852784" duration="10634000" />
     </task>
     <servers />
   </component>
@@ -120,7 +125,91 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state width="411" height="466" key="DebuggerActiveHint" timestamp="1575032753097">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="411" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1575032753097" />
+    <state width="1112" height="319" key="GridCell.Tab.0.bottom" timestamp="1575034109065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575034109065" />
+    <state width="1112" height="319" key="GridCell.Tab.0.center" timestamp="1575034109064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1575034109064" />
+    <state width="1112" height="319" key="GridCell.Tab.0.left" timestamp="1575034109064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1575034109064" />
+    <state width="1112" height="319" key="GridCell.Tab.0.right" timestamp="1575034109064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1575034109064" />
+    <state width="1112" height="319" key="GridCell.Tab.1.bottom" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.1.center" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.1.left" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.1.right" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.2.bottom" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.2.center" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.2.left" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state width="1112" height="319" key="GridCell.Tab.2.right" timestamp="1575034108981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1112" height="319" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1575034108981" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1575029867590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1575029867590" />
+    <state x="349" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575034112701">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1575034112701" />
+    <state x="275" y="128" width="609" height="526" key="find.popup" timestamp="1575037167147">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="275" y="128" width="609" height="526" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1575037167147" />
+    <state x="482" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575037202611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="482" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1575037202611" />
+  </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/photo.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/photo.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="delete_comment_photo.php">
         <watch expression="redirect ('comments_photo.php?id={$comment-&gt;photo_id}')" />
