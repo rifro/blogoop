@@ -23,19 +23,20 @@ class Paginate
     }
 
     public function page_total(){
-        return ceil ($this->items_total_count/$this->items_per_page);
+        return ceil($this->items_total_count/$this->items_per_page);
     }
 
     public function has_previous(){
-        return $this->previous () >= 1 ? true : false;
+        return $this->previous () >= 1;
     }
 
     public function has_next(){
-        return $this->next () <= $this->page_total () ? true : false;
+        return $this->next () <= $this->page_total ();
     }
 
     public function offset(){
         return ($this->current_page -1) * $this->items_per_page;
+        // $this->current_page >= 1
     }
 
 }

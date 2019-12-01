@@ -4,6 +4,7 @@ class Session
 {
     private $signed_in = false;
     public $user_id;
+    public $count = 0;
 
     /*automatisch starten van een session*/
     function __construct()
@@ -58,7 +59,7 @@ class Session
         }
     }
 
-    public function visitor_count(){
+    private function visitor_count(){
         if(isset($_SESSION['count'])){
             return $this->count = $_SESSION['count']++;
         } else{

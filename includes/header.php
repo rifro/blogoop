@@ -1,3 +1,7 @@
+<?php
+require_once("admin/includes/init.php");
+ob_start(); 
+?>
 <html lang="en">
 
 <head>

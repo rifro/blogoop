@@ -1,5 +1,7 @@
-<?php require_once("init.php"); ?>
-<?php ob_start(); ?>
+<?php 
+require_once("init.php");
+ob_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -4,7 +4,7 @@ if (!$session->is_signed_in()) {
     redirect("login.php");
 }
 $message = "";
-if (isset($_POST['submit'])) {
+if (isset($_POST['add'])) {
     $photo = new Photo();
     $photo->title = $_POST['title'];
     $photo->set_file($_FILES['file']);

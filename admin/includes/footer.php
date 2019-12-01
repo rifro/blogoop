@@ -74,7 +74,7 @@
     // instantiates the pie chart, passes in the data and
     // draws it.
     function drawChart() {
-
+        global $session;
         // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
